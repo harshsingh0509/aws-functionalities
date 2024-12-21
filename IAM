@@ -31,3 +31,42 @@ Start
         |
         v
       End
+
+Demonstration part
+
+Start
+  |
+  v
+[Log in to AWS Management Console]
+  |
+  v
+[Go to IAM Dashboard]
+  |
+  v
+[Create IAM User]
+  |
+  v
+[Choose Access Type (e.g., Programmatic, Console)]
+  |
+  v
+[Assign Policies (e.g., AdministratorAccess, ReadOnlyAccess)]
+  |
+  v
+[Add Tags (Optional)]
+  |
+  v
+[Review and Create User]
+  |
+  v
+[Secure with MFA (Optional but Recommended)]
+  |
+  v
+[Test User Access by Logging In]
+  |
+  v
+[Monitor Activities via IAM Dashboard]
+  |
+  v
+End
+
+
