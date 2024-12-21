@@ -1,0 +1,33 @@
+Basic Use Case of AWS IAM (Identity and Access Management)
+
+AWS IAM is used to manage access to AWS resources securely. It enables fine-grained control over who can access which resources and under what conditions.
+
+Use Case Example:
+Suppose you are part of a team developing an application hosted on AWS. Your team has developers, testers, and managers. Using IAM:  
+
+1. User Management: You can create individual IAM users for each team member.  
+2. Access Control: Assign specific permissions to each user based on their role:
+   - Developers: Full access to EC2 and S3 for deploying and managing applications.
+   - Testers: Read-only access to S3 to view logs.
+   - Managers: View-only permissions for monitoring application performance in CloudWatch.  
+3. Security: Enforce multi-factor authentication (MFA) for all users to enhance security.  
+4. Temporary Access: Use IAM roles to grant temporary access to AWS resources without sharing credentials (e.g., for an external consultant).  
+
+IAM ensures that every action is performed only by authorized personnel, adhering to the principle of least privilege.
+
+Start
+  |
+  v
+[Create IAM Users] -------> [Assign Roles/Permissions]
+        |                           |
+        v                           v
+  [Groups (Optional)]         [Attach Policies]
+        |                           |
+        v                           v
+[Secure Users with MFA] -----> [Grant Access to Resources]
+        |
+        v
+ [Temporary Access (Optional)] --------> [Monitor Access]
+        |
+        v
+      End
