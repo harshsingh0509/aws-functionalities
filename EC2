@@ -1,0 +1,65 @@
+Amazon Elastic Compute Cloud (EC2) is a web service that provides scalable virtual servers in the cloud. It allows users to run applications, host websites, and perform various computational tasks with customizable configurations.
+
+Key Features:
+
+Scalability: You can scale resources up or down based on demand.
+Flexible Configurations: Choose instance types, operating systems, and storage options.
+Pay-As-You-Go: Pay only for the compute capacity you use.
+Security: Integrates with AWS services like IAM, VPC, and security groups.
+
+Flowchart: EC2 Instance Explanation
+Start
+  |
+  v
+[What is EC2?]
+  |
+  v
+[Benefits of EC2]
+  |
+  v
+[Key Features]
+  |
+  v
+[Use Cases (e.g., Hosting, Applications)]
+  |
+  v
+End
+
+Flowchart: Demonstration Part
+Start
+  |
+  v
+[Log in to AWS Management Console]
+  |
+  v
+[Go to EC2 Dashboard]
+  |
+  v
+[Launch Instance]
+  |
+  v
+[Choose AMI (Amazon Machine Image)]
+  |
+  v
+[Select Instance Type (e.g., t2.micro)]
+  |
+  v
+[Configure Instance Details (e.g., VPC, Subnet)]
+  |
+  v
+[Add Storage]
+  |
+  v
+[Add Tags (Optional)]
+  |
+  v
+[Configure Security Group]
+  |
+  v
+[Review and Launch]
+  |
+  v
+[Connect to the Instance]
+  |
+  v
+End
