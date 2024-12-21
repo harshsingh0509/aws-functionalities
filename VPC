@@ -1,0 +1,73 @@
+Amazon Virtual Private Cloud (VPC) enables you to launch AWS resources in a logically isolated virtual network that you define.
+
+Key Features:
+
+Subnet Isolation: Divide the VPC into private and public subnets.
+Customizable Network: Define your own IP address range, subnets, route tables, and gateways.
+Enhanced Security: Use security groups and network access control lists (NACLs) for traffic control.
+Internet Gateway (IGW): Provides public internet access to resources in a public subnet.
+VPN or Direct Connect: Connect your on-premises network to the AWS cloud.
+Use Cases:
+
+Hosting applications securely in private subnets.
+Building hybrid cloud environments.
+Isolating sensitive workloads.
+
+Flowchart: Explanation of VPC
+Start  
+  |
+  v
+[What is VPC?]  
+  - Virtual network to launch AWS resources securely  
+  |
+  v
+[Key Components]  
+  - Subnets: Public/Private subdivisions of the VPC  
+  - Route Tables: Direct traffic within the VPC  
+  - Internet Gateway (IGW): Enables internet access  
+  - NAT Gateway: Secure internet access for private resources  
+  |
+  v
+[Benefits of VPC]  
+  - Security: Isolated network  
+  - Flexibility: Custom IP range  
+  - Control: Manage traffic flow  
+  |
+  v
+[Log in to AWS Console]  
+  - Navigate to VPC Dashboard  
+  |
+  v
+[Create VPC]  
+  - Specify CIDR block for IP range  
+  |
+  v
+[Set Up Subnets]  
+  - Create Public Subnet (Attach IGW)  
+  - Create Private Subnet (No internet access)  
+  |
+  v
+[Configure Route Tables]  
+  - Public Route Table: Connect to IGW  
+  - Private Route Table: Isolate private traffic  
+  |
+  v
+[Attach IGW to VPC]  
+  - Enable internet access for public subnet  
+  |
+  v
+[Optional: Configure NAT Gateway]  
+  - Allow private subnet instances to access the internet securely  
+  |
+  v
+[Launch Resources]  
+  - Public Subnet: EC2 instance with internet access  
+  - Private Subnet: EC2 instance without direct internet access  
+  |
+  v
+[Test Connectivity]  
+  - Ping public EC2 from outside  
+  - Verify private EC2 is isolated  
+  |
+  v
+End  
