@@ -1,0 +1,65 @@
+Start  
+  |
+  v
+[Log in to AWS Management Console]
+  |
+  v
+[Go to EC2 Dashboard]
+  |
+  v
+[Launch an EC2 Instance]
+  |
+  v
+[Choose AMI (e.g., Ubuntu, Amazon Linux)]
+  |
+  v
+[Select Instance Type (e.g., t2.medium)]
+  |
+  v
+[Configure Instance Details (e.g., VPC, Subnet, Auto-assign Public IP)]
+  |
+  v
+[Add Storage (e.g., 20 GB EBS Volume)]
+  |
+  v
+[Add Tags (Optional)]
+  |
+  v
+[Configure Security Group (Allow Port 8080 and SSH)]
+  |
+  v
+[Review and Launch Instance]
+  |
+  v
+[Connect to the EC2 Instance via SSH]
+  |
+  v
+[Install Jenkins on the Instance]
+  |
+  v
+[Start Jenkins and Open Web Interface]
+  |
+  v
+[Complete Initial Setup and Install Plugins]
+  |
+  v
+[Configure Jenkins for Use]
+  |
+  v
+End
+
+
+steps explanation
+Log in to AWS Management Console: Start by logging into your AWS account.
+Go to EC2 Dashboard: Navigate to the EC2 service.
+Launch an EC2 Instance: Select "Launch Instance" to start creating a virtual server.
+Choose AMI: Pick an operating system, e.g., Ubuntu for Jenkins installation.
+Select Instance Type: Use a type like t2.medium for sufficient memory and CPU for Jenkins.
+Configure Instance Details: Set VPC, Subnet, and enable Auto-assign Public IP.
+Add Storage: Allocate at least 20 GB for Jenkins and its dependencies.
+Add Tags: Optionally add tags to identify your instance.
+Configure Security Group: Allow inbound traffic for SSH (port 22) and Jenkins (port 8080).
+Connect via SSH: Use a terminal or SSH client to connect to the instance.
+Install Jenkins: Use commands to update the package manager, install Java, and Jenkins.
+Start Jenkins: Run Jenkins and access it through the public IP and port 8080 in a browser.
+Set up Jenkins: Complete the initial setup by entering the admin password, installing plugins, and configuring settings.
