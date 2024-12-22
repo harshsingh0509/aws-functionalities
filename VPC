@@ -71,3 +71,51 @@ Start
   |
   v
 End  
+
+components of virtual private cloud
+Start  
+  |
+  v
+[Virtual Private Cloud (VPC)]  
+  - Isolated virtual network for AWS resources  
+  |
+  v
+[Subnets]  
+  - Public Subnet: Access to the internet  
+  - Private Subnet: No direct internet access  
+  |
+  v
+[Route Tables]  
+  - Directs traffic within the VPC  
+  - Public Route Table: Includes route to IGW  
+  - Private Route Table: No internet route  
+  |
+  v
+[Internet Gateway (IGW)]  
+  - Allows public subnet instances to access the internet  
+  |
+  v
+[NAT Gateway]  
+  - Enables private subnet instances to access the internet securely  
+  |
+  v
+[Network Access Control Lists (NACLs)]  
+  - Acts as a firewall for subnets  
+  - Controls inbound and outbound traffic  
+  |
+  v
+[Security Groups]  
+  - Instance-level firewall  
+  - Controls access to EC2 instances  
+  |
+  v
+[Elastic IP Addresses (Optional)]  
+  - Static public IP for instances or services  
+  |
+  v
+[VPC Peering (Optional)]  
+  - Connects two VPCs for resource sharing  
+  |
+  v
+End  
+
